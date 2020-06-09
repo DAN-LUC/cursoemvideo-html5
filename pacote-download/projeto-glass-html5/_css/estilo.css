@@ -1,15 +1,64 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(170, 170, 170);
     
     color: hsl(0, 0%, 0%);
 }
+
+div#interface {
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    margin: -25px auto 10px auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    padding: 15px;
+}
+
 p{
     text-align: justify;
     text-indent: 50px;
 }
+a{
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underlide;
+}
+header#cabecalho img#icone {
+    position: absolute;
+    left: 700px;
+    top: 40px;
+}
+
+header#cabecalho {
+    border-bottom: 1px rgb(165, 165, 165) solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px; /* existe repetições porque a imagem é pequena, então ele é repetida ate completar todo background( .. ) serve para voltar um pasta do arquivo */
+}
+
+header#cabecalho h1{
+    font-size: 30px;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgb(22, 22, 22);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+    margin-top: 10px;
+}
+
+header#cabecalho h2{
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(32, 32, 32);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+    margin-bottom: 0px;
+}
+/************ FORMATAÇÃO imagem */
+
     figure.foto-legenda{
         position: relative;
         border: 8px solid rgb(255, 255, 255);
@@ -38,3 +87,145 @@ p{
     figure.foto-legenda:hover figcaption{
         opacity: 1;
     }
+
+    /* ************ formatação Menu *****************/
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}    
+
+nav#menu li{
+    display: inline-block; /* lista na horizintal */
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: rgb(3, 3, 3);
+}
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: rgb(252, 248, 251);
+    text-decoration: underline;
+}
+
+/********************************* formatacao section *********************/
+section#corpo {
+    display: block; /* para a section ser mostrada como bloco */
+    width: 500px;
+    float: left;
+    border-right: 1px solid rgb(29, 28, 28);
+    padding: 13px;
+    font-family: Arial, sans-serif;
+}
+/************************************** artigo */
+article#noticia h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+/************************************** Cabeçalho do artigo */
+header#artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: -10px;
+}
+header#artigo h2{
+    font-family: 'FonteLogo', sans-serif;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+header#artigo h3{
+    font-size: 10pt;
+    background-color: #ffffff;
+    color: #acacac;
+}
+
+.direita {
+    text-align: right;
+}
+/************8888888888888888888888888888888 TABELA */
+table#tabela1{
+    border: 1px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabela1 td {
+    border: 1px solid rgb(44, 44, 44);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabela1 td.ce {
+    color: rgb(221, 221, 221);
+    background-color: rgb(43, 43, 43);
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabela1 td.cd {
+    color: rgb(0, 0, 0);
+    background-color: rgb(156, 156, 156);
+    vertical-align: top;
+}
+table#tabela1 caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabela1 caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+/********************* aside */
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #cfcdcd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+}
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2{
+    font-size: 15pt;
+    color: #ffffff;
+    background-color: #999999;
+    padding: 8pt;
+}
+footer#RodaPe {
+    clear: both; /* limpa a configuracao das laterais */
+
+}
