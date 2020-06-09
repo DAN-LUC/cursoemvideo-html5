@@ -9,9 +9,10 @@ iframe#frame-spec {
     height: 280px;
     
     overflow: hidden;
-     border: none;
+    border: none;
 }
 
-iframe#frame-spec ::-webkit-scrollbar{
+iframe#frame-spec::-webkit-scrollbar{
     display: none;
+    width: 100px;
 }
