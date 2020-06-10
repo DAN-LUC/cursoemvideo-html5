@@ -229,3 +229,9 @@ footer#RodaPe {
     clear: both; /* limpa a configuracao das laterais */
 
 }
+
+video#index {
+    width: 350px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.705);
+}

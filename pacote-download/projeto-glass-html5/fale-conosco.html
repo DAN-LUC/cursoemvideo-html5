@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre o google glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
 </head>
 <script src="_javascript/funcoes.js"></script>
 <body>
@@ -32,39 +33,48 @@
             </nav>
     
         </header>
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <section id="corpo-full">   
+            <article id="noticia">
+                    <header id="artigo">
+                        <hgroup>
+                            <h3> Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por dada</h2>
+                            <h3 class="direita"> Atualizado em 01/Maio/2013</h3>
+                        </hgroup>
+                    </header> 
+            <form action=""> 
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+                <fieldset id="usuario"><legend>Identificação do Usuário</legend> 
+                    <p>Nome <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"> </p>
+                    <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos" > </p>
+                    <p>E-mail:</p>
+                    <fieldset id="sexo"> <legend>Sexo:</legend> 
+                        - Masculino
+                        - Feminino</fieldset>
+                    <p>data de Nascimento:</p> </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+            <fieldset id="endereco"<legend>Endereço do Usuário</legend> 
+                    Logradouro:
+                    Número:
+                    Estado:
+                    Cidade:</fieldset> 
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+            <fieldset><legend>Mensagem do Usuário</legend> 
+                    Grau de Urgência:
+                    Mensagem:</fieldset> 
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+            <fieldset><legend>Quero um Google Glass</legend>
+                    Gostaria de adquirir um Google Glass quando disponível
+                    Cor:
+                    Quantidade:
+                    Preço Total: R$</fieldset> 
 
 
-[BOTÃO ENVIAR]
-
+                [BOTÃO ENVIAR]
+                </form>
+            </article>
+        </section>        
 <footer id="RodaPe">
     <p>Copyright&copy; 2013 - by Gustavo Guanabara
         Facebook | Twitter</p>
